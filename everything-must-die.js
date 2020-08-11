@@ -1,5 +1,21 @@
 everythingMustDie = {};
 
+emdTranslations = {
+    'nl-NL': ["Padmeubilair vernielen", "Bezoekers opblazen"],
+};
+
+function emdGetTranslation(id, fallback)
+{
+    var language = context.configuration.get("general.language");
+    console.log(language);
+    if (emdTranslations.hasOwnProperty(language) && id < emdTranslations[language].length)
+    {
+        return emdTranslations[language][id];
+    }
+
+    return fallback;
+}
+
 // #3526: Make vandalism
 var destroyPathFurnitureGA = function(isExecuting, args)
 {
@@ -96,8 +112,8 @@ var main = function()
         }
     );
     
-    ui.registerMenuItem("Destroy path furniture", destroyPathFurniture);
-    ui.registerMenuItem("Explode guests", explode);
+    ui.registerMenuItem(emdGetTranslation(0, "Destroy path furniture"), destroyPathFurniture);
+    ui.registerMenuItem(emdGetTranslation(1, "Explode guests"), explode);
 };
 
 registerPlugin({
