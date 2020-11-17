@@ -2,6 +2,7 @@ everythingMustDie = {};
 
 emdTranslations = {
     'nl-NL': ["Padmeubilair vernielen", "Bezoekers opblazen"],
+    'ko-KR': ["보도 기물 전부 파괴하기", "손님 폭발시키기"],
 };
 
 function emdGetTranslation(id, fallback)
