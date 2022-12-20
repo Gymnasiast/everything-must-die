@@ -8,7 +8,6 @@ emdTranslations = {
 function emdGetTranslation(id, fallback)
 {
     var language = context.configuration.get("general.language");
-    console.log(language);
     if (emdTranslations.hasOwnProperty(language) && id < emdTranslations[language].length)
     {
         return emdTranslations[language][id];
