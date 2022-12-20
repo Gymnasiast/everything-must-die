@@ -122,5 +122,6 @@ registerPlugin({
     authors: ['Gymnasiast'],
     licence: 'MIT',
     type: 'remote',
+    targetApiVersion: 0,
     main: main
 });
