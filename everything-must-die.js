@@ -6,6 +6,7 @@ emdTranslations = {
     'es-ES': ["Destruir muebles del camino", "Explotar visitantes"],
     'eo-ZZ': ["Detrui meblojn de trotuaroj", "Eksplodigi gastojn"],
     'it-IT': ["Distruggi decorazioni percorso", "Fai esplodere visitatori"],
+    'hu-HU': ["Bútorok tönkretétele az utakon", "Vendégek felrobbantása"],
 };
 
 function emdGetTranslation(id, fallback)
