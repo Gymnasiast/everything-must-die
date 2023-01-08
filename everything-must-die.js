@@ -10,6 +10,7 @@ emdTranslations = {
     'pt-BR': ["Destruir móveis no caminho", "Explodir visitantes"],
     'de-DE': ["Wegobjekte zerstören", "Gäste sprengen"],
     'zh-TW': ["毀壞道路上的設施", "引爆遊客"],
+    'ca-ES': ["Destrueix el mobiliari dels camins", "Fes explotar els visitants"],
 };
 
 function emdGetTranslation(id, fallback)
